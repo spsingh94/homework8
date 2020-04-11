@@ -6,3 +6,19 @@ h1 {
     padding: 50px 0px 50px 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
+
+.row {
+text-align: center;
+display: inline;
+}
+
+ul {
+    border: 1px;
+    border-style: solid;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h5 {
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
