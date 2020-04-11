@@ -7,9 +7,8 @@ h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
-.row {
-text-align: center;
-display: inline;
+.card {
+    margin: 0px 0px 0px 0px;
 }
 
 ul {
