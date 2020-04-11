@@ -15,3 +15,6 @@ var thirdPerson = new Person ("Tammer","Engineer","3","tammer@fakemail.com","Git
 var fourthPerson = new Person ("Christian","Engineer","4","christian@fakemail.com","Github: ceckenrode")
 
 var fifthPerson = new Person ("John","Intern","5","john@fakemail.com","School: 2University")
+
+// var getInputFields = document.getElementById("").innerHTML =
+console.log (firstPerson.personsName);
