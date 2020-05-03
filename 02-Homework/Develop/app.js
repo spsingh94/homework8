@@ -9,9 +9,55 @@ const OUTPUT_DIR = path.resolve(__dirname, "output")
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 ​
 const render = require("./lib/htmlRenderer");
+
+var employees = [];
 ​
-​
+function addEmployee(){
+inquirer.prompt([{
+    type: "list",
+    name: "employee",
+    message: "Which employee would you like to add?",
+    choices: ["Engineer", "Intern", "Manager"]
+}]).then(function(response){
+switch 
+})
+    
+//inquirer asking which employee they want to add
+//switch statement calling next function based on user answer
+//createManager()
+}
+​function createManager(){
+    //inquirer statemetn asking all manager questions (in class)
+    //create new manager using new keyword
+    //push new manager to employees arr
+    //call init func (will restart questioning)
+}
+
+//do the same thing with other roles. (will do the same thing done on 21 to 24)
+
 // Write code to use inquirer to gather information about the development team members,
+function init(){
+inquirer.prompt([{
+    type: "list",
+    name: "continue",
+    message: "Do you want to enter an employee?",
+    choices: ["yes", "no"]
+}]).then(function (response){
+    if (response.continue == "yes"){
+        addEmployee();
+    } else {
+       let html = render(employees);
+       fs.writeFile(outputPath, html, function(error){
+           if(error){
+               throw error;
+           }
+           console.log ("File Successfully Written");
+       })
+    }
+})
+}
+
+init();
 // and to create objects for each team member (using the correct classes as blueprints!)
 ​
 // After the user has input all employees desired, call the `render` function (required
