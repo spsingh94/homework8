@@ -40,22 +40,22 @@ case "Engineer": createEngineer();
     //inquirer statemetn asking all manager questions (in class)
     inquirer.prompt([{
         type: "input",
-        name: "identity",
+        name: "name",
         message: "What is your name?",
     },
     {
         type: "input",
-        name: "identity",
+        name: "id",
         message: "What is your id?",
     },
     {
         type: "input",
-        name: "identity",
+        name: "email",
         message: "What is your email?",
     },
     {
         type: "input",
-        name: "identity",
+        name: "office",
         message: "What is your office number?",
     }]).then(function(response){
        new Manager = response.identity
@@ -68,22 +68,22 @@ case "Engineer": createEngineer();
 ​function createIntern(){
     inquirer.prompt([{
         type: "input",
-        name: "identity",
+        name: "name",
         message: "What is your name?",
     },
     {
         type: "input",
-        name: "identity",
+        name: "id",
         message: "What is your id?",
     },
     {
         type: "input",
-        name: "identity",
+        name: "email",
         message: "What is your email?",
     },
     {
         type: "input",
-        name: "identity",
+        name: "school",
         message: "What school do you attend?",
     }]).then(function(response){
        new Intern = response.identity
@@ -93,22 +93,22 @@ case "Engineer": createEngineer();
 ​function createEngineer(){
     inquirer.prompt([{
         type: "input",
-        name: "identity",
+        name: "name",
         message: "What is your name?",
     },
     {
         type: "input",
-        name: "identity",
+        name: "id",
         message: "What is your id?",
     },
     {
         type: "input",
-        name: "identity",
+        name: "email",
         message: "What is your email?",
     },
     {
         type: "input",
-        name: "identity",
+        name: "github",
         message: "What is your github?",
     }]).then(function(response){
        new Engineer = response.identity
