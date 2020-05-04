@@ -19,7 +19,17 @@ inquirer.prompt([{
     message: "Which employee would you like to add?",
     choices: ["Engineer", "Intern", "Manager"]
 }]).then(function(response){
-switch 
+switch (response.employee) {
+case "Manager": createManager();
+}
+break;
+switch (response.employee) {
+case "Intern": createIntern();
+}
+break;
+switch (response.employee) {
+case "Engineer": createEngineer();
+}
 })
     
 //inquirer asking which employee they want to add
@@ -28,9 +38,82 @@ switch
 }
 ​function createManager(){
     //inquirer statemetn asking all manager questions (in class)
+    inquirer.prompt([{
+        type: "input",
+        name: "identity",
+        message: "What is your name?",
+    },
+    {
+        type: "input",
+        name: "identity",
+        message: "What is your id?",
+    },
+    {
+        type: "input",
+        name: "identity",
+        message: "What is your email?",
+    },
+    {
+        type: "input",
+        name: "identity",
+        message: "What is your office number?",
+    }]).then(function(response){
+       new Manager = response.identity
+    })
+    init();
     //create new manager using new keyword
     //push new manager to employees arr
     //call init func (will restart questioning)
+}
+​function createIntern(){
+    inquirer.prompt([{
+        type: "input",
+        name: "identity",
+        message: "What is your name?",
+    },
+    {
+        type: "input",
+        name: "identity",
+        message: "What is your id?",
+    },
+    {
+        type: "input",
+        name: "identity",
+        message: "What is your email?",
+    },
+    {
+        type: "input",
+        name: "identity",
+        message: "What school do you attend?",
+    }]).then(function(response){
+       new Intern = response.identity
+    })
+    init();
+}
+​function createEngineer(){
+    inquirer.prompt([{
+        type: "input",
+        name: "identity",
+        message: "What is your name?",
+    },
+    {
+        type: "input",
+        name: "identity",
+        message: "What is your id?",
+    },
+    {
+        type: "input",
+        name: "identity",
+        message: "What is your email?",
+    },
+    {
+        type: "input",
+        name: "identity",
+        message: "What is your github?",
+    }]).then(function(response){
+       new Engineer = response.identity
+    })
+    init();
 }
 
 //do the same thing with other roles. (will do the same thing done on 21 to 24)
